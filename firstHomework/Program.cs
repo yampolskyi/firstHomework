@@ -16,7 +16,6 @@ namespace Homework1
             
             for (int i = 0; i < 1; i++)
             {
-                ////
                 try 
                 {
                     Console.Write("Введите значение, равное размерности массива: ");
