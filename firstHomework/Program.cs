@@ -11,7 +11,7 @@ namespace Homework1
         static void Main(string[] args)
         {
             string strx;
-            int[] arr = new int[1];
+            int[] arr = new int[0];
             int x  = 0;
             
             for (int i = 0; i < 1; i++)
