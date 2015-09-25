@@ -10,30 +10,50 @@ namespace Homework1
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите значение, равное размерности массива: ");
-            string strx = Console.ReadLine();
-            int x = Convert.ToInt32(strx);
-
-
-            int[] arr = new int[x];
-            for (int i = 0; i < x; i++)
+            string strx;
+            int[] arr = new int[1];
+            int x  = 0;
+            
+            for (int i = 0; i < 1; i++)
             {
-                try
+                ////
+                try 
                 {
-                    int subI = i + 1;
-                    Console.Write("Введите элемент №" + subI + ": ");
-                    arr[i] = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Введите значение, равное размерности массива: ");
+                    strx = Console.ReadLine();
+                    x = Convert.ToInt32(strx);
+                    arr = new int[x];
                 }
                 catch (Exception)
                 {
+                    i--;
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Вы ввели недопустимое значение");
                     Console.ResetColor();
-                    i--;
-
                 }
 
+
             }
+
+
+             for (int i = 0; i < x; i++)
+             {
+                 try
+                 {
+                     int subI = i + 1;
+                     Console.Write("Введите элемент №" + subI + ": ");
+                     arr[i] = Convert.ToInt32(Console.ReadLine());
+                 }
+                 catch (Exception)
+                 {
+                     Console.ForegroundColor = ConsoleColor.Red;
+                     Console.WriteLine("Вы ввели недопустимое значение");
+                     Console.ResetColor();
+                     i--;
+
+                 }
+
+             }
 
 
             sort(arr, 0, x - 1);
