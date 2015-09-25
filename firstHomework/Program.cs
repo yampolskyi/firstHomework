@@ -48,8 +48,7 @@ namespace Homework1
                      Console.ForegroundColor = ConsoleColor.Red;
                      Console.WriteLine("Вы ввели недопустимое значение");
                      Console.ResetColor();
-                     i--;
-
+                     i--;                     
                  }
 
              }
@@ -60,6 +59,7 @@ namespace Homework1
             {
                 Console.WriteLine(arr[i]);
             }
+            Console.Read();
 
 
         }
